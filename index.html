@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Digital Twin</title>
+  </head>
+  <body>
+    <div class="container-sm">
+      <h1>Software Engineering 2: Developing IoT Applications SIT 209</h1>
+      <h2>Digital Twin</h2>
+    </div>
+
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#"
+        ><img
+          src="https://ontrack.chitkara.edu.in/assets/images/doubtfire-logo-person-white.svg"
+          height="30"
+      /></a>
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="history.html">History</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5"></div>
+        <div class="col-5">
+          <p>Select the color of the light:</p>
+          <div class="custom-control custom-radio">
+            <input
+              type="radio"
+              id="customRadio1"
+              name="customRadio"
+              class="custom-control-input"
+            />
+            <label class="custom-control-label" for="customRadio1">Red</label>
+          </div>
+
+          <div class="custom-control custom-radio">
+            <input
+              type="radio"
+              id="customRadio2"
+              name="customRadio"
+              class="custom-control-input"
+            />
+            <label class="custom-control-label" for="customRadio2">Green</label>
+          </div>
+
+          <div class="custom-control custom-radio">
+            <input
+              type="radio"
+              id="customRadio3"
+              name="customRadio"
+              class="custom-control-input"
+            />
+            <label class="custom-control-label" for="customRadio3">Blue</label>
+          </div>
+
+          <div class="custom-control custom-radio">
+            <input
+              type="radio"
+              id="customRadio4"
+              name="customRadio"
+              class="custom-control-input"
+            />
+            <label class="custom-control-label" for="customRadio4"
+              >Yellow</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column-5"><div class="empty"></div></div>
+      <div id="one">
+        <div class="column-5">
+          <img src="bulb.png" width="200px" height="200px" />
+          <pre></pre>
+          <label class="switch">
+            <input id="1" type="checkbox" onchange="sliderval1(1)" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <!--  -->
+      </div>
+
+      <!-- BulB2-->
+      <div class="column-5">
+        <div id="two">
+          <img class="bulb2" src="bulb.png" width="200px" height="200px" />
+          <pre></pre>
+          <label class="switch">
+            <input id="2" type="checkbox" onchange="sliderval2(2)" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <!-- Bulb 3 -->
+      <div class="column-5">
+        <div id="three">
+          <img src="bulb.png" width="200px" height="200px" />
+          <pre></pre>
+          <label class="switch">
+            <input id="3" type="checkbox" onchange="sliderval3(3)" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <!-- Bulb 4 -->
+      <div class="column-5">
+        <div id="four">
+          <img src="bulb.png" width="200px" height="200px" />
+          <pre></pre>
+          <label class="switch">
+            <input id="4" type="checkbox" onchange="sliderval4(4)" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <!-- Bulb 5 -->
+
+      <div class="column-5">
+        <div id="five">
+          <img id="bul" src="bulb.png" width="200px" height="200px" />
+          <pre></pre>
+          <label class="switch">
+            <input id="5" type="checkbox" onchange="sliderval5(5)" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
